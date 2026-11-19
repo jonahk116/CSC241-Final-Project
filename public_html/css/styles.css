@@ -1,0 +1,106 @@
+body {
+    background-color: #f8f9fa; /* Light gray background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 40px; /* Space for the fixed footer */
+}
+
+.container {
+    padding-top: 20px;
+}
+
+/* === Navigation Bar === */
+.bg-primary {
+    background-color: #007bff !important; /* Standard Bootstrap Blue */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* === Cards and Forms (Login/Register/Profile) === */
+.card {
+    border: none;
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Soft shadow */
+    margin-bottom: 20px;
+}
+
+.card-header {
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.5rem 0.5rem 0 0 !important;
+}
+
+/* === Profile Page Stats Cards === */
+.card.text-center {
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.card.text-center:hover {
+    transform: translateY(-5px); /* Lift card slightly on hover */
+}
+
+.display-4 {
+    font-weight: 700;
+}
+
+.text-success {
+    color: #28a745 !important;
+}
+
+.text-warning {
+    color: #ffc107 !important;
+}
+
+/* === Buttons === */
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+/* === Footer === */
+.footer {
+    padding: 15px 0;
+    text-align: center;
+    color: #6c757d; /* Muted gray text */
+    border-top: 1px solid #e9ecef;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.jeopardy-board .card.bg-primary {
+    height: 100px !important; /* Force fixed height */
+    min-height: 100px !important; /* Ensure it doesn't collapse */
+    display: flex !important; /* Use flexbox for centering */
+    align-items: center !important; /* Vertical centering */
+    justify-content: center !important; /* Horizontal centering */
+    padding: 5px !important; /* Reduce padding inside the header box */
+}
+
+/* Ensure the title inside doesn't have extra margin/padding */
+.jeopardy-board .card.bg-primary .card-title {
+    font-size: 1rem;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.2;
+}
+
+/* Target the question tiles */
+.jeopardy-tile {
+    height: 100px !important; /* Force fixed height on question tiles */
+    min-height: 100px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Fix spacing issue with card body inside tiles */
+.jeopardy-tile .card-body {
+    padding: 0.5rem !important; /* Keep a minimal padding on the money text */
+}
